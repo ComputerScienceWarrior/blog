@@ -47,4 +47,10 @@ class BlogEntriesController < ApplicationController
   def blog_entry_params
     params.require(:blog_entry).permit(:title, :content)
   end
+
+  def require_login
+    unless logged_in?
+      redirect_to login_path, alert: 'Please log in to continue.'
+    end
+  end
 end
