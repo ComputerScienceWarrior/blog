@@ -1,0 +1,10 @@
+<h1><%= @blog_entry.title %></h1>
+<p><%= @blog_entry.content %></p>
+
+<% if logged_in? %>
+  <%= link_to 'Edit', edit_blog_entry_path(@blog_entry) %> |
+  <%= link_to 'Back', blog_entries_path %> |
+  <%= link_to 'Delete', @blog_entry, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% else %>
+  <%= link_to 'Back', blog_entries_path %>
+<% end %>

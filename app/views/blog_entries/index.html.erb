@@ -1,0 +1,10 @@
+<h1>Blog Entries</h1>
+
+<% @blog_entries.each do |entry| %>
+  <h2><%= link_to entry.title, blog_entry_path(entry) %></h2>
+  <p><%= truncate(entry.content, length: 100) %></p>
+<% end %>
+
+<% if logged_in? %>
+  <%= link_to 'New Blog Entry', new_blog_entry_path %>
+<% end %>
