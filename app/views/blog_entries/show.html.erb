@@ -1,10 +1,12 @@
-<h1><%= @blog_entry.title %></h1>
-<p><%= @blog_entry.content %></p>
+<div class="blog-entry-container">
+  <h1 class="blog-entry-title"><%= @blog_entry.title %></h1>
+  <p class="blog-entry-content"><%= simple_format(@blog_entry.content) %></p>
 
-<% if logged_in? %>
-  <%= link_to 'Edit', edit_blog_entry_path(@blog_entry) %> |
-  <%= link_to 'Back', blog_entries_path %> |
-  <%= link_to 'Delete', @blog_entry, method: :delete, data: { confirm: 'Are you sure?' } %>
-<% else %>
-  <%= link_to 'Back', blog_entries_path %>
-<% end %>
+  <div class="blog-entry-actions">
+    <% if logged_in? %>
+      <%= link_to 'Edit', edit_blog_entry_path(@blog_entry), class: 'blog-entry-action' %>
+      <%= link_to 'Delete', @blog_entry, method: :delete, data: { confirm: 'Are you sure?' }, class: 'blog-entry-action' %>
+    <% end %>
+    <%= link_to 'Back', blog_entries_path, class: 'blog-entry-action' %>
+  </div>
+</div>
