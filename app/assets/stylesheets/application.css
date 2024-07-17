@@ -29,6 +29,7 @@ body{
 .nav-items, a:hover{
     color: black;
     font-size: larger;
+    transition: 0.5s;
 }
 
 .search-input {
