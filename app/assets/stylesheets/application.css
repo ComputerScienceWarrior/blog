@@ -29,8 +29,15 @@ body{
     background-color: transparent;
 }
 
-.search-input{
-    height: 20px;
+.search-input {
+    width: 200px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: url('magnifying-glass.png') no-repeat 8px center;
+    background-size: 16px 16px;
 }
 
 #search-text{

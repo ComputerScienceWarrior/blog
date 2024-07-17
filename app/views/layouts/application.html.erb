@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <div id="navigation-wrapper">
+      <ul id="navigation">
+        <li class="nav-items"><a href=<%= root_path %>></a>Home</li>
+        <li class="nav-items"><a href=<%= root_path %>></a>View Posts</li>
+        <div>
+          <div><span id="search-text">Search:</span> <input type="text" class="search-input">
+        </div>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>
