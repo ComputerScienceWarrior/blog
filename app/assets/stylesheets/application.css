@@ -1,15 +1,107 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body{
+   background-color: #f0f0f0;
+}
+
+/* NAVIGATION */
+#navigation-wrapper{
+    text-align: center;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-items{
+    padding: 5px;
+}
+
+.nav-items, a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-items, a:hover{
+    color: black;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.search-input {
+    width: 200px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: url('magnifying-glass.png') no-repeat 8px center;
+    background-size: 16px 16px;
+}
+
+#search-text{
+    font-size: large;
+    color: white;
+}
+
+/* BLOG ENTRIES */
+
+h1{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.blog-entries-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+  
+.blog-entries-table th,
+.blog-entries-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+.blog-entries-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+  
+.blog-entries-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+.blog-entries-table tr:hover {
+    background-color: #f1f1f1;
+}
+  
+.new-entry-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+.new-entry-link:hover {
+    background-color: #45a049;
+}
+  
+.blog-entries-table a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+  
+.blog-entries-table a:hover {
+    text-decoration: underline;
+}
