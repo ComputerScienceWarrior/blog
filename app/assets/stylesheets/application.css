@@ -1,5 +1,5 @@
 body{
-   background-color:cornsilk;
+   background-color: #f0f0f0;
 }
 
 /* NAVIGATION */
@@ -20,6 +20,11 @@ body{
     padding: 5px;
 }
 
+.nav-items, a{
+    font-size: larger;
+    color: white;
+}
+
 .search-button{
     background-color: transparent;
 }
@@ -28,6 +33,10 @@ body{
     height: 20px;
 }
 
+#search-text{
+    font-size: larger;
+    color: white;
+}
 
 /* BLOG ENTRIES */
 
