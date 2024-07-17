@@ -18,7 +18,7 @@
             <%= link_to edit_blog_entry_path(entry) do %>
               <%= image_tag('edit.png', alt: 'Edit', class: 'icon') %>
             <% end %>
-            <%= link_to blog_entry_path(entry), method: :delete, data: { confirm: 'Are you sure?' }, id: "delete-blog" do %>
+            <%= link_to blog_entry_path(entry), method: :delete,data: { "turbo-method": :delete, confirm: 'Are you sure?' }, id: "delete-blog" do %>
               <%= image_tag('trash.png', alt: 'Delete', class: 'icon') %>
             <% end %>
           </td>
