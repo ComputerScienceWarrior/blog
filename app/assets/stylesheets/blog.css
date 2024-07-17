@@ -1,0 +1,117 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.blog-entry-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-entry-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: cadetblue;
+    text-align: center;
+}
+
+.blog-entry-content {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.blog-entry-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog-entry-action {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.blog-entry-action:hover {
+    background-color: #5f9ea0;
+}
+
+#delete-blog {
+    color: red;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.blog-entries-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.blog-entries-table th,
+.blog-entries-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.blog-entries-table th {
+    background-color: cadetblue;
+    color: white;
+}
+
+.blog-entries-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.blog-entries-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.new-entry-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.new-entry-link:hover {
+    background-color: #5f9ea0;
+}
+
+/* HERO IMAGE */
+.hero-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
