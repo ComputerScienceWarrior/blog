@@ -49,3 +49,56 @@ body {
 .blog-entry-action:hover {
     background-color: #5f9ea0;
 }
+
+#delete-blog {
+    color: red;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+  
+.blog-entries-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+.blog-entries-table th,
+.blog-entries-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+.blog-entries-table th {
+    background-color: cadetblue;
+    color: white;
+}
+  
+.blog-entries-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+.blog-entries-table tr:hover {
+    background-color: #f1f1f1;
+}
+  
+.new-entry-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+  
+.new-entry-link:hover {
+    background-color: #5f9ea0;
+}
+  
