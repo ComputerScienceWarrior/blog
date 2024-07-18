@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'pages/home'
   resource :user, only: %i[show edit update]
 
   resources :blog_entries
