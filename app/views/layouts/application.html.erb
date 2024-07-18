@@ -8,6 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag 'blog', media: 'all' %>
+    <%= stylesheet_link_tag 'footer', media: 'all' %>
     <%= javascript_importmap_tags %>
   </head>
 
@@ -22,5 +23,16 @@
       </ul>
     </div>
     <%= yield %>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; <%= Date.today.year %> James-Ryan's Technical Blog. All rights reserved.</p>
+        <nav class="footer-nav">
+          <%= link_to 'Home', root_path %> |
+          <%= link_to 'About', root_path %> |
+          <%= link_to 'Contact', root_path %>
+        </nav>
+      </div>
+    </footer>
+
   </body>
 </html>
