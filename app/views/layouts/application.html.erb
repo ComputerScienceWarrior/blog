@@ -15,9 +15,10 @@
   <body>
     <div id="navigation-wrapper">
       <ul id="navigation">
-        <li class="nav-items"><a href=<%= blog_entries_path %>>View Blogs</a></li>
-        <li class="nav-items"><a href=<%= about_path %>>About Me</a></li> <%# this will eventually route to an actual home page (about me)%>
-        <li class="nav-items"><a href=<%= contact_path %>>Contact Me!</a></li>
+        <li class="nav-items"><a href=<%= home_path %>>Home</a></li>
+        <li class="nav-items"><a href=<%= blog_entries_path %>>Blogs</a></li>
+        <li class="nav-items"><a href=<%= about_path %>>About</a></li>
+        <li class="nav-items"><a href=<%= contact_path %>>Contact</a></li>
           <div><span id="search-text">Search:</span> <input type="text" class="search-input">
         </div>
       </ul>
@@ -26,13 +27,7 @@
     <footer class="footer">
       <div class="footer-content">
         <p>&copy; <%= Date.today.year %> James-Ryan's Technical Blog. All rights reserved.</p>
-        <nav class="footer-nav">
-          <%= link_to 'Home', root_path %> |
-          <%= link_to 'About', root_path %> |
-          <%= link_to 'Contact', root_path %>
-        </nav>
       </div>
     </footer>
-
   </body>
 </html>
