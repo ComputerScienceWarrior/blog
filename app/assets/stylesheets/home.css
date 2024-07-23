@@ -1,0 +1,40 @@
+/* 
+    HOME PAGE WRAPPER DIV
+*/
+#home-wrapper {
+    background-color: rgb(111, 140, 160);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#home-wrapper h1 {
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+
+/* 
+    DIVS THAT MAKE UP THE HOME
+    SECTION WITHIN THE ABOVE WRAPPER
+*/
+
+.home-sections {
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#view-blogs {
+    background-color: aquamarine;
+}
+
+#view-projects {
+    background-color: chartreuse;
+}
+
+#view-tutoring {
+    background-color: yellow;
+}
