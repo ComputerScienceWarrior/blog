@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @greeting = 'Welcome to my technical Blog'
+    @greeting = 'Welcome to my technical Blog!'
   end
 
   def about
