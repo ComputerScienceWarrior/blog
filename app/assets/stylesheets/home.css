@@ -1,0 +1,54 @@
+/* HOME PAGE WRAPPER DIV */
+#home-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#home-wrapper h1 {
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* DIVS THAT MAKE UP THE HOME SECTION WITHIN THE ABOVE WRAPPER */
+.home-sections {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+#view-blogs {
+    background-color: #5bc0de; 
+    width: 100%;
+}
+
+#view-projects {
+    background-color: #5cb85c; 
+    cursor: pointer;
+}
+
+#view-tutoring {
+    background-color: #f0ad4e;
+    cursor: pointer;
+}
+
+#hero-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}

@@ -27,7 +27,7 @@ body{
 }
 
 .nav-items, a:hover{
-    color: black;
+    color: yellow;
     font-size: larger;
     transition: 0.5s;
 }
@@ -37,6 +37,7 @@ body{
     padding: 10px;
     padding-left: 30px;
     font-size: 14px;
+    color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     background: url('magnifying-glass.png') no-repeat 8px center;
@@ -102,6 +103,3 @@ h1{
     text-decoration: none;
 }
   
-.blog-entries-table a:hover {
-    text-decoration: underline;
-}
