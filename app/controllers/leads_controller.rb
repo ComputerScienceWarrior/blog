@@ -14,6 +14,7 @@ class LeadsController < ApplicationController
 
   def create
     @lead = Lead.new(lead_params)
+    @lead.user_id = current_user.id
     if @lead.save
       redirect_to @lead, notice: 'Lead was successfully created.'
     else
