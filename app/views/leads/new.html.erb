@@ -1,0 +1,25 @@
+<%= form_for @lead do |f| %>
+    <div>
+        <%= f.label "First Name" %>
+        <%= f.text_field :first_name %>
+    </div>
+    <div>
+        <%= f.label "Last Name" %>
+        <%= f.text_field :last_name %>
+    </div>
+    <div>
+        <%= f.label "Email" %>
+        <%= f.text_field :email, type: 'email' %>
+    </div>
+    <div>
+        <%= f.label "Phone Number" %>
+        <%= f.text_field :phone_number, type: 'phone' %>
+    </div>
+    <div> 
+        <%= f.label "Reason for Contact" %>
+        <%= f.text_area :message_content %>
+    </div>
+    <div>
+        <%= f.submit %>
+    </div>
+<% end %>
