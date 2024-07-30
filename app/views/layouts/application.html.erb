@@ -19,7 +19,11 @@
         <li class="nav-items"><a href=<%= home_path %>>Home</a></li>
         <li class="nav-items"><a href=<%= blog_entries_path %>>Blogs</a></li>
         <li class="nav-items"><a href=<%= about_path %>>About</a></li>
-        <li class="nav-items"><a href=<%= contact_path %>>Contact</a></li>
+        <li class="nav-items"><a href=<%= new_lead_path %>>Contact</a></li>
+        <% if logged_in? %> 
+          <li class="nav-items"><a href=<%= leads_path %>>Leads</a></li>
+        <% end %>
+
           <div><span id="search-text">Search:</span> <input type="text" class="search-input">
         </div>
       </ul>
