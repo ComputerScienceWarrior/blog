@@ -1,25 +1,23 @@
-<%= form_for @lead do |f| %>
-    <div>
-        <%= f.label "First Name" %>
-        <%= f.text_field :first_name %>
-    </div>
-    <div>
-        <%= f.label "Last Name" %>
-        <%= f.text_field :last_name %>
-    </div>
-    <div>
-        <%= f.label "Email" %>
-        <%= f.text_field :email, type: 'email' %>
-    </div>
-    <div>
-        <%= f.label "Phone Number" %>
-        <%= f.text_field :phone_number, type: 'phone' %>
-    </div>
-    <div> 
-        <%= f.label "Reason for Contact" %>
-        <%= f.text_area :message_content %>
-    </div>
-    <div>
-        <%= f.submit %>
-    </div>
-<% end %>
+<div class="form-wrapper">
+    <%= form_for @lead do |f| %>
+        <h1>Submit Inquiry</h1>
+        <div class="input-divs">
+            <%= f.text_field :first_name, placeholder: 'First Name', class: 'form-inputs' %>
+        </div>
+        <div class="input-divs">
+            <%= f.text_field :last_name, placeholder: 'Last Name', class: 'form-inputs' %>
+        </div>
+        <div class="input-divs">
+            <%= f.text_field :email, type: 'email', placeholder: "Email (ex: james@gmail.com)", class: 'form-inputs' %>
+        </div>
+        <div class="input-divs">
+            <%= f.text_field :phone_number, type: 'phone', placeholder: "(602)-XXX-XXXX", class: 'form-inputs' %>
+        </div>
+        <div class="input-divs"> 
+            <%= f.text_area :message_content, placeholder: "Enter your reason for reaching out.", class: 'form-inputs' %>
+        </div>
+        <div class="submit-div">
+            <%= f.submit "Create Lead", class: 'submit-button' %>
+        </div>
+    <% end %>
+</div>
