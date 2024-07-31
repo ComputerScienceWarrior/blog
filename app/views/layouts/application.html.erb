@@ -10,6 +10,7 @@
     <%= stylesheet_link_tag 'home', media: 'all' %>
     <%= stylesheet_link_tag 'blog', media: 'all' %>
     <%= stylesheet_link_tag 'footer', media: 'all' %>
+    <%= stylesheet_link_tag 'lead', media: 'all' %>
     <%= javascript_importmap_tags %>
   </head>
 
@@ -23,7 +24,6 @@
         <% if logged_in? %> 
           <li class="nav-items"><a href=<%= leads_path %>>Leads</a></li>
         <% end %>
-
           <div><span id="search-text">Search:</span> <input type="text" class="search-input">
         </div>
       </ul>
