@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2) do
+ActiveRecord::Schema[7.1].define(version: 3) do
   create_table "blog_entries", force: :cascade do |t|
     t.string "title"
     t.text "content"
@@ -18,6 +18,18 @@ ActiveRecord::Schema[7.1].define(version: 2) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_blog_entries_on_user_id"
+  end
+
+  create_table "leads", force: :cascade do |t|
+    t.string "email"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "message_content"
+    t.string "phone_number"
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_leads_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -29,4 +41,5 @@ ActiveRecord::Schema[7.1].define(version: 2) do
   end
 
   add_foreign_key "blog_entries", "users"
+  add_foreign_key "leads", "users"
 end

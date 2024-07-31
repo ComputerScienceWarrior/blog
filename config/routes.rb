@@ -2,10 +2,13 @@ Rails.application.routes.draw do
   resource :user, only: %i[show edit update]
   resources :blog_entries
 
-  # sessions controller
+  # sessions_controller
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+
+  # leeds_controller
+  resources :leads
   
   #pages_controller
   get 'home', to: 'pages#home'

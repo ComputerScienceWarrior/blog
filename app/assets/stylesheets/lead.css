@@ -1,0 +1,31 @@
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.input-divs {
+    padding-bottom: 10px;
+}
+
+.form-inputs {
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.submit-div {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    width: 200px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: cyan;
+}
